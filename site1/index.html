@@ -5,6 +5,20 @@
 <head>
 	<meta charset="utf-8">
 	<title> Practice Website 1 </title>
+	<style>
+		p {
+			color: blue;
+			font-size: 20px;
+			width: 200px;
+		}
+
+		h1 {
+			color: blue;
+			font-size: 36px;
+			text-align: center;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -30,17 +44,19 @@
 </section>
 
 <!-- Lists -->
-<h1>Shopping List</h1>
-<ol>
-	<li>Milk</li>
-	<li>Donuts</li>
-	<li>Cookies</li>
-		<ul>
-			<li>Chocolate</li>
-			<li>Sugar</li>
-			<li>Peanut Butter</li>
-		</ul>
-</ol>
+<section id="listSec">
+	<h1>Shopping List</h1>
+	<ol>
+		<li>Milk</li>
+		<li>Donuts</li>
+		<li>Cookies</li>
+			<ul>
+				<li>Chocolate</li>
+				<li>Sugar</li>
+				<li>Peanut Butter</li>
+			</ul>
+	</ol>
+</section>
 
 <!-- HTML Character Entity References -->
 <!-- 
@@ -50,15 +66,24 @@
 	non breaking space = "&nbsp;" that way the space won't be split (if, for example, when minimizing the browser) 
 -->
 
+<!-- link another page in same directory -->
 <div> 
 	This is a link to another page: 
 	<a href="another-webpage.html" title="same-directory link">
 		link
 	</a>
 </div>
+
+<!-- link website -->
 <div>
 	<a href="http://www.google.com" target="_blank" title="Google"> Go To Google </a>
 </div>
+
+<!-- link to sections in the same website -->
+<div>
+	<a href="#listSec">list section</a>
+</div>
+
 
 <footer>Footer </footer>
 </body>
