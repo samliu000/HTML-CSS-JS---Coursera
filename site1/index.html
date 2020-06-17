@@ -23,7 +23,7 @@
 		}
 
 		#listSec{
-			color: blue;
+			color: black;
 		}
 
 		/*all p with class big*/
@@ -38,7 +38,40 @@
 
 		/*descendent*/
 		div p {
-			color: yellow;
+			color: black;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		li:nth-child(odd){
+			background-color: gray;
+			cursor: pointer;
+			width: 200px;
+			text-align: center;
+		}
+		li:nth-child(even){
+			background-color: white;
+			cursor: pointer;
+			width: 200px;
+			text-align: center;
+		}
+
+		a:link, a:visited {
+			text-decoration:non;
+			background-color:lightblue;
+			border: 1px solid black;
+			display:block;
+			color: black;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+		a:hover, a:active {
+			background-color: lightpurple;
+			color: purple;
 		}
 
 	</style>
@@ -120,6 +153,15 @@
 		p inside div (p is child of div)
 	</p>
 </div>
+
+<!-- Pseudo-Class Selectors -->
+<ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="google.com" target="_blank">Google</a></li>
+	<li><a href="facebook.com" target="_blank">Facebook</a></li>
+</ul>
+
+
 
 <footer>Footer </footer>
 </body>
