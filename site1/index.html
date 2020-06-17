@@ -26,6 +26,21 @@
 			color: blue;
 		}
 
+		/*all p with class big*/
+		p.big {
+			color: purple;
+		}
+
+		/*direct child*/
+		div > p {
+			color: gray;
+		}
+
+		/*descendent*/
+		div p {
+			color: yellow;
+		}
+
 	</style>
 </head>
 
@@ -92,6 +107,19 @@
 	<a href="#listSec">list section</a>
 </div>
 
+<p class="big">
+	this paragraph has class big
+</p>
+
+<p>
+	this does not
+</p>
+
+<div>
+	<p> 
+		p inside div (p is child of div)
+	</p>
+</div>
 
 <footer>Footer </footer>
 </body>
