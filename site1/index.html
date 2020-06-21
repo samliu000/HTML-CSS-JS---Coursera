@@ -85,8 +85,22 @@
 			padding: 10px;
 			border: 20px;
 			width: 300px;
+			height: 100px;
 			margin-bottom:50px;
 			margin-top:20px;
+			overflow: auto;
+		}
+
+		#backg {
+			width: 500px;
+			height: 500px;
+			color: white;
+			background-color: blue;
+			background-image: url("ghibli.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			/* or */
+			background: url("smile.webp") round left top lightblue;
 		}
 
 	</style>
@@ -180,12 +194,18 @@
 <!-- style > ID > class, pseudo-class, attribute > # of elements -->
 <!-- using !important will override any other property -->
 
+<!-- The Box Model -->
 <div class="box">
-	<div style="background-color: lightgray"> Hello There, this is a box and I am experimenting with box properties </div>
+	<div style="background-color: lightgray"> Hello There, this is a box and I am experimenting with box properties Excepteur elit mollit ut incididunt ex ut duis sunt ut id. Lorem ipsum duis aute sunt nostrud enim ut elit esse consequat officia consequat dolore dolore dolore. Veniam voluptate ut ut pariatur duis culpa amet tempor ad occaecat ullamco. </div>
 </div>
 
 <div class="box">
 	<div style="background-color: lightgray"> Hello There, this is a box and I am experimenting with box properties </div>
+</div>
+
+<!-- Background -->
+<div id="backg">
+	Hello! This is the background
 </div>
 
 <footer>Footer </footer>
