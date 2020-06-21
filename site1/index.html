@@ -80,6 +80,15 @@
 			color: gray;
 		}
 
+		.box {
+			background-color: gold;
+			padding: 10px;
+			border: 20px;
+			width: 300px;
+			margin-bottom:50px;
+			margin-top:20px;
+		}
+
 	</style>
 </head>
 
@@ -170,6 +179,14 @@
 <!-- Specificity Score -->
 <!-- style > ID > class, pseudo-class, attribute > # of elements -->
 <!-- using !important will override any other property -->
+
+<div class="box">
+	<div style="background-color: lightgray"> Hello There, this is a box and I am experimenting with box properties </div>
+</div>
+
+<div class="box">
+	<div style="background-color: lightgray"> Hello There, this is a box and I am experimenting with box properties </div>
+</div>
 
 <footer>Footer </footer>
 </body>
