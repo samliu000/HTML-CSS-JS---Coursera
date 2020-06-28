@@ -1,0 +1,28 @@
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  margin: 0;
+}
+
+#long-text {
+	background-color: lightblue;
+}
+#long-text h3 {
+	text-align: center;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list h4 {
+  color: #951C49;
+}
+#nav-list li h4:hover {
+  background: #E7E7E7;
+}
