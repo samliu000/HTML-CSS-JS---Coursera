@@ -1,2 +1,4 @@
-var x;
-console.log(x);
+var string = "Hello";
+
+string = string+" World";
+console.log(string+"!");
