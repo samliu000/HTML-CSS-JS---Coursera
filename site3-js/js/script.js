@@ -30,3 +30,13 @@ for( var i = 0; i < 10; i++) {
 }
 console.log("sum of 0 through 9 is: " + sum);
 
+function orderChickenWith(sideDish) {
+	// if(sideDish === undefined) {
+	// 	sideDish = "whatever";
+	// } better way:
+	sideDish = sideDish || "whatever";
+	console.log("Chicken with " + sideDish);
+}
+
+orderChickenWith("noodles");
+orderChickenWith();
