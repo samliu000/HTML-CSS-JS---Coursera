@@ -113,4 +113,24 @@ changePrimitive(value);
 console.log("after changePrimitive, orig value:");
 console.log(value);
 
+function test() {
+	console.log(this);
+	this.myName = "Samuel";
+	console.log("Hello Coursera!");
+}
+test();
+console.log(window.myName);
+
+function Circle (radius) {
+	this.radius = radius;
+}
+
+// make one circle method for all circles
+Circle.prototype.getArea = 
+	function() {
+		return Math.PI * Math.pow(this.radius, 2);
+	}
+
+var myCircle = new Circle(10);
+console.log(myCircle);
 
