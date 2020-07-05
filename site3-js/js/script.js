@@ -212,6 +212,8 @@ console.log(doubleAll(10)); // its own exec env, etc.
 
 // Immediately Invoked Function Expression
 // IIFE
-(function () {
-	console.log("Hello Coursera!");
-})();
+(function (name) {
+	console.log("Hello " + name);
+})("Samuel");
+
+
