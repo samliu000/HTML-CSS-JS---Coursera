@@ -210,4 +210,8 @@ function makeMultiplier (multiplier) {
 var doubleAll = makeMultiplier(2);
 console.log(doubleAll(10)); // its own exec env, etc.
 
-
+// Immediately Invoked Function Expression
+// IIFE
+(function () {
+	console.log("Hello Coursera!");
+})();
