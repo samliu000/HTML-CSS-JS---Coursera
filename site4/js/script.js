@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded",
     // Unobstrusive event binding
     document.querySelector("button").addEventListener("click", sayHello);
 
+    // print out x, y coordinates if shift is pressed
     document.querySelector("body").addEventListener("mousemove", 
       function(event) {
         if(event.shiftKey == true){
