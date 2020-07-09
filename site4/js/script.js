@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded",
     // print out x, y coordinates if shift is pressed
     document.querySelector("body").addEventListener("mousemove", 
       function(event) {
+        // event shiftKey is true if shift is pressed
         if(event.shiftKey == true){
             console.log("x: " + event.clientX);
             console.log("y: " + event.clientY);
